@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/wechat.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<style type="text/css">
+.form-group{
+width: 90vw;
+
+}
+body{
+	background-color: rgb(137, 207, 240);
+}
+.agree{
+		font-size: 7px;
+		margin-left: 20px;
+	}
+.agree input{
+		vertical-align: -2px;
+		margin-right: 5px;
+	}
+.per{
+		color: blue;
+	}
+section{
+	  background-image:url(http://www.csszengarden.com/210/clouds.jpg);
+}
+
+.purchase{
+	font-size: 25px;
+}
+.title{
+	text-align: center;
+	margin-top: -35px;
+	font-size: 25px;
+}
+footer{
+	width: 100vw;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    font-size: 25px;
+    background-image: url(http://www.csszengarden.com/210/divider01.jpg);
+    color: #fff;
+}
+footer div{
+display: inline-block;
+}
+.box {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.list{
+	display: flex;
+	flex-direction: column;
+    position: absolute;
+    display: none;
+    bottom: 35px;
+    left: 25px;
+}
+
+
+.pro{
+	margin-left: 63vw;
+	display: inline-block;
+	margin-top: -25px;
+	vertical-align:25px;
+}
+section{
+	margin-bottom: 20px;
+}
+.con{
+	margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+<section>
+<div class="purchase"><返回</div>
+<div class="title">用户注册</div>
+</section>
+<div class="agree"><input type="checkbox" name="">我已同意[<span class="per">网站个人用户协议</span>]</div>
+
+<form class="form-horizontal">
+  <div class="form-group form-group-sm">
+    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+  </div>
+  <div class="form-group form-group-sm">
+    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+    <div class="col-sm-10">
+      <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+    </div>
+  </div>
+
+   <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+<footer>
+<div class="count">...我的账户
+<div>
+	<ul class="list">
+		<a href="login.html"><li class="login">预约申请</li></a>
+		<li>我的预约</li>
+		<li>预约审核</li>
+		<li>用户审核</li>
+		<li>用户设置</li>
+		<li>用户注册</li>
+	</ul>
+</div></div>
+<div class="globe">环球资讯</div>
+<div class="theme">春季主题</div>
+
+</footer>
+</body>
+<script type="text/javascript">
+	$(".count").click( function () { $('.list').toggle(); })
+</script>
+</html>

@@ -1,0 +1,43 @@
+body{
+	background-color: rgb(137, 207, 240);
+}
+section{
+	  background-image:url(http://www.csszengarden.com/210/clouds.jpg);
+}
+
+.purchase{
+	font-size: 25px;
+}
+.title{
+	text-align: center;
+	margin-top: -35px;
+	font-size: 25px;
+}
+footer{
+	width: 100vw;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    font-size: 25px;
+    background-image: url(http://www.csszengarden.com/210/divider01.jpg);
+    color: #fff;
+}
+footer div{
+display: inline-block;
+}
+.box {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.list{
+	display: flex;
+	flex-direction: column;
+    position: absolute;
+    display: none;
+    bottom: 35px;
+    left: 25px;
+}
