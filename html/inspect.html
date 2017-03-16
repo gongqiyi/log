@@ -19,7 +19,7 @@ section{
 	margin-left: 20vw;
 	width: 800px;
 	margin-right: 20vw;
-	vertical-align: 10px;
+	vertical-align: 7px;
 	display: inline-block;
 	margin-top: 20px;
 }
@@ -115,7 +115,14 @@ footer {
 .globe{
 	border-right: 1px solid black;
 }
-
+.two{
+	position: relative;
+}
+.two .btn-danger{
+	position: absolute;
+	left: 70px;
+	bottom: 0px;
+}
 </style>
 </head>
 <body>
@@ -126,16 +133,16 @@ footer {
 <div class="agree"><input type="checkbox" name="">我已同意[<span class="per">网站个人用户协议</span>]</div>
 
 <form class="table">
-<div class="in">公司 <input type="text" name="" class="form-group"></div>
+<div class="in">公司 <input type="text" name="" ></div>
 <div class="in">部门 <input type="text" name=""></div>
 <div class="in">姓名 <input type="text" name=""></div>
 <div class="in">邮箱 <input type="text" name=""></div>
 <div class="in">身份证 <input type="text" name="" class="card"></div>
 <div class="in">手机<input type="text" name="" id="phone"></div>
 <div class="in">用户类别 <input type="text" name="" id="user"></div>
-<button type="submit" class="btn btn-success sub">通过</button>
-<button type="submit" class="btn btn-danger sub">拒绝</button>
-
+<div class="two"><button type="submit" class="btn btn-success sub">通过</button>
+<button type="submit" class="btn btn-danger sub two">拒绝</button>
+</div>
 </form>
 <footer>
 <div class="count"><img src="1.png" id="key"><div class="co">我的账户</div>
