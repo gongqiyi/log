@@ -13,7 +13,7 @@ body{
 }
 .title{
 	margin-left: 50px;
-	font-weight: 200;
+	
 }
 section{
 	background-color: #65666d;
@@ -48,6 +48,7 @@ section{
    margin-right:50vw;
    margin-left: 42vw;
    margin-top: 30px;
+   background-color: #65666d;
 }
 .agree{
 		font-size: 7px;
@@ -103,6 +104,7 @@ display: inline-block;
 }
 #list{
 	background-color: #fff;
+    height: 400px;
 }
 
 .pro{
@@ -141,26 +143,29 @@ footer {
 }
 .line{
 	border-bottom: 1px solid rgb(128,128,128);
+	font-size: 5px;
+	color: black;
 
 }
-.wo{
-	margin-left: 20px;
+#wo{
+	margin-left: 40px;
+	display: inline-block;
+   margin-top: 26px;
+   margin-bottom:22.5px;
 }
-td{ 
-	width:100px; 
-	height:50px;
+tr{
+	height: 30px;
 }
-
 </style>
 </head>
 <body>
 <section>
-<div class="purchase"><a href="../wechat.html"><返回</a></div>
-<div class="title">我的预约</div>
+<div class="purchase"><a href="./apply21.html"><返回</a></div>
+<div class="title" style="font-weight: 100;">我的预约</div>
 </section>
 <div class="agree"><input type="checkbox" name="">我已同意[<span class="per">网站个人用户协议</span>]</div>
 
-	<table class="table table-bordered">
+<table class="table table-bordered">
 		<thead>
 			<tr>
 				<th>公司</th>
@@ -210,12 +215,12 @@ td{
 <div class="count"><img src="1.png" id="key"><div class="co">我的账户</div>
 <div>
 	<ul class="list" id="list">
-		<a href="../html/apply1.html"><li class="login line"><span class="wo">预约申请</span></li></a>
-		<a href="../html/apply21.html"><li class="login line"><span class="wo">我的预约</span></li></a>
-		<a href="../html/apply3.html"><li class="login line"><span class="wo">预约审核</span></li></a>
-		<a href="../html/inspect.html"><li class="login line"><span class="wo">用户审核</span></li></a>
-		<a href="../html/set.html"><li class="login line"><span class="wo">用户设置</span></li></a>
-		<a href="../html/login.html"><li class="login"><span class="wo">用户注册</span></li></a>
+		<a href="../html/apply1.html"><li class="login line"><span id="wo">预约申请</span></li></a>
+		<a href="../html/apply21.html"><li class="login line"><span id="wo">我的预约</span></li></a>
+		<a href="../html/apply3.html"><li class="login line"><span id="wo">预约审核</span></li></a>
+		<a href="../html/inspect.html"><li class="login line"><span id="wo">用户审核</span></li></a>
+		<a href="../html/set.html"><li class="login line"><span id="wo">用户设置</span></li></a>
+		<a href="../html/login.html"><li class="login line"><span id="wo">用户注册</span></li></a>
 	</ul>
 </div></div>
 <div class="globe"><span class="word">环球资讯</span></div>

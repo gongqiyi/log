@@ -8,18 +8,27 @@
 <script type="text/javascript" src="js/wechat.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <style type="text/css">
+body{
+	font-family: "Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;
+}
+.title{
+	margin-left: 50px;
+	
+}
 section{
 	background-color: #65666d;
 	color: #fff;
 }
 .table{
-	margin-top: 20px;
+	margin-top: 10px;
+	background-color: #eeeeee;
+
 }
 .table .in{
-	margin-left: 20vw;
+	margin-left: 15vw;
 	width: 800px;
 	margin-right: 20vw;
-	vertical-align: 10px;
+	vertical-align: 7px;
 	display: inline-block;
 	margin-top: 20px;
 }
@@ -36,12 +45,14 @@ section{
 	margin-left: 23px;
 }
 .sub{
-   margin-right: 45vw;
-   margin-left: 45vw;
+   margin-right:50vw;
+   margin-left: 42vw;
+   margin-top: 30px;
+   background-color: #65666d;
 }
 .agree{
 		font-size: 7px;
-		margin-left: 20px;
+		margin-left: 60px;
 	}
 .agree input{
 		vertical-align: -2px;
@@ -66,7 +77,7 @@ footer{
 	justify-content: space-between;
     position: fixed;
     bottom: 0;
-    font-size: 25px;
+    font-size: 20px;
  
 }
 footer div{
@@ -83,11 +94,18 @@ display: inline-block;
 	flex-direction: column;
     position: absolute;
     display: none;
-    bottom: 35px;
-    left: 43px;
+    bottom: 20px;
+    left: 10px;
+    background-color: #fff;
     z-index: 100;
+    width: 120px;
+    height: 180px;
+    border:1px solid rgb(128,128,128);
 }
-
+#list{
+	background-color: #fff;
+    height: 400px;
+}
 
 .pro{
 	margin-left: 63vw;
@@ -105,50 +123,70 @@ section{
 	margin-bottom: 3px;
 }
 footer {
-	border:1px solid black;
+	border:1px solid rgb(128,128,128);
 }
 .count .co{
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	border-left: 1px solid rgb(128,128,128);
+	border-right: 1px solid rgb(128,128,128);
 }
 .globe{
-	border-right: 1px solid black;
-}
+	border-right: 1px solid rgb(128,128,128);
 
+}
+#key{
+	width: 24px;
+	height: 13px;
+}
+.word{
+	margin-left: -20px;
+	margin-right: 25px;
+}
+.line{
+	border-bottom: 1px solid rgb(128,128,128);
+	font-size: 5px;
+	color: black;
+
+}
+#wo{
+	margin-left: 40px;
+	display: inline-block;
+   margin-top: 26px;
+   margin-bottom:22.5px;
+}
 </style>
 </head>
 <body>
 <section>
-<div class="purchase"><返回</div>
-<div class="title">用户设置</div>
+<div class="purchase"><a href="./apply21.html"><返回</a></div>
+<div class="title" style="font-weight: 100;">用户审核</div>
 </section>
 <div class="agree"><input type="checkbox" name="">我已同意[<span class="per">网站个人用户协议</span>]</div>
 
 <form class="table">
-<div class="in">公司 <input type="text" name="" class="form-group"></div>
+<div class="in">公司 <input type="text" name=""></div>
 <div class="in">部门 <input type="text" name=""></div>
 <div class="in">姓名 <input type="text" name=""></div>
 <div class="in">邮箱 <input type="text" name=""></div>
 <div class="in">身份证 <input type="text" name="" class="card"></div>
 <div class="in">手机<input type="text" name="" id="phone"></div>
 <div class="in">用户类别 <input type="text" name="" id="user"></div>
-<button type="submit" class="btn btn-success sub">提交</button>
+<button type="submit" class="btn sub" style="color: #fff">提交</button>
 
 </form>
 <footer>
 <div class="count"><img src="1.png" id="key"><div class="co">我的账户</div>
 <div>
-	<ul class="list">
-		<a href="login.html"><li class="login">预约申请</li></a>
-		<li>我的预约</li>
-		<li>预约审核</li>
-		<li>用户审核</li>
-		<li>用户设置</li>
-		<li>用户注册</li>
+	<ul class="list" id="list">
+		<a href="../html/apply1.html"><li class="login line"><span id="wo">预约申请</span></li></a>
+		<a href="../html/apply21.html"><li class="login line"><span id="wo">我的预约</span></li></a>
+		<a href="../html/apply3.html"><li class="login line"><span id="wo">预约审核</span></li></a>
+		<a href="../html/inspect.html"><li class="login line"><span id="wo">用户审核</span></li></a>
+		<a href="../html/set.html"><li class="login line"><span id="wo">用户设置</span></li></a>
+		<a href="../html/login.html"><li class="login line"><span id="wo">用户注册</span></li></a>
 	</ul>
 </div></div>
-<div class="globe">环球资讯</div>
-<div class="theme">春季主题</div>
+<div class="globe"><span class="word">环球资讯</span></div>
+<div class="theme"><span class="word">春季主题</span></div>
 
 </footer>
 </body>
